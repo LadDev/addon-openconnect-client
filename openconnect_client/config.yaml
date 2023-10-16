@@ -3,7 +3,7 @@ name: OpenConnect Client
 version: 0.0.1
 slug: openconnect_client
 description: Fast, modern, secure OpenConnect tunnel (client)
-url: https://github.com/LadDev/addon-openconnect-client
+url: https://github.com/LadDev/addon-openconnect-client/tree/main/openconnect_client
 arch:
   - aarch64
   - amd64
