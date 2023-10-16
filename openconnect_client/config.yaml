@@ -14,9 +14,9 @@ apparmor: true
 host_network: true
 init: false
 ports:
-  443/tcp: 443
+  80/tcp: 80
 ports_description:
-  443/tcp: OpenConnect client status API
+  80/tcp: OpenConnect client status API
 hassio_api: true
 privileged:
   - NET_ADMIN
