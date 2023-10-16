@@ -1,5 +1,5 @@
 ---
-name: WireGuard Client
+name: OpenConnect Client
 version: 0.0.1
 slug: openconnect_client
 description: Fast, modern, secure OpenConnect tunnel (client)
