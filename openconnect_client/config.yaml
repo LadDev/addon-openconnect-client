@@ -1,0 +1,35 @@
+---
+name: WireGuard Client
+version: 0.0.1
+slug: openconnect_client
+description: Fast, modern, secure OpenConnect tunnel (client)
+url: https://github.com/LadDev/addon-openconnect-client
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+apparmor: true
+host_network: true
+init: false
+ports:
+  443/tcp: 443
+ports_description:
+  443/tcp: OpenConnect client status API
+hassio_api: true
+privileged:
+  - NET_ADMIN
+devices:
+  - /dev/net/tun
+map:
+  - ssl:rw
+options:
+  server: "vpn-ch3.freedomvpn.world"
+  username: ""
+  password: ""
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+  server: str
+  username: str
+  password: password?
